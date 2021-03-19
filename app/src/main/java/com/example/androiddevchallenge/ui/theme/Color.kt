@@ -26,7 +26,6 @@ val onSecondary = Color(0xFFFFFFFF)
 val onBackground = Color(0xFF655454)
 val onSurface = Color(0xCC333333)
 
-
 val primaryDark = Color(0xFFFFFFFF)
 val secondaryDark = Color(0xFFE1AFAF)
 val backgroundDark = Color(0xFF333333)
@@ -35,4 +34,3 @@ val onPrimaryDark = Color(0xFF333333)
 val onSecondaryDark = Color(0xFF333333)
 val onBackgroundDark = Color(0xFFF0EAE2)
 val onSurfaceDark = Color(0xCCFFFFFF)
-
