@@ -17,27 +17,58 @@ package com.example.androiddevchallenge.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.sp
+import com.example.androiddevchallenge.R
+
+// Define and load the fonts of the app
+private val light = Font(R.font.kulimpark_light, FontWeight.W300)
+private val regular = Font(R.font.kulimpark_regular, FontWeight.W400)
+private val lato_bold = Font(R.font.lato_bold, FontWeight.W500)
+private val lato_regular = Font(R.font.lato_regular, FontWeight.W600)
+
+private val fontFamily = FontFamily(light, regular, lato_bold, lato_regular)
 
 // Set of Material typography styles to start with
 val typography = Typography(
     body1 = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Normal,
-        fontSize = 16.sp
-    )
-        /* Other default text styles to override
-    button = TextStyle(
-        fontFamily = FontFamily.Default,
+        fontFamily = fontFamily,
+        fontWeight = FontWeight.W600,
+        letterSpacing = 0.sp,
+        fontSize = 14.sp,
+    ),
+    h1 = TextStyle(
+        fontFamily = fontFamily,
+        fontWeight = FontWeight.W300,
+        letterSpacing = 1.15.sp,
+        fontSize = 28.sp,
+    ),
+    h2 = TextStyle(
+        fontFamily = fontFamily,
+        fontWeight = FontWeight.W400,
+        letterSpacing = 1.15.sp,
+        fontSize = 15.sp,
+    ),
+    h3 = TextStyle(
+        fontFamily = fontFamily,
         fontWeight = FontWeight.W500,
-        fontSize = 14.sp
+        letterSpacing = 0.sp,
+        fontSize = 14.sp,
+    ),
+    // Other default text styles to override
+    button = TextStyle(
+        fontFamily = fontFamily,
+        fontWeight = FontWeight.W500,
+        letterSpacing = 1.15.sp,
+        fontSize = 14.sp,
     ),
     caption = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Normal,
-        fontSize = 12.sp
+        fontFamily = fontFamily,
+        fontWeight = FontWeight.W400,
+        letterSpacing = 1.15.sp,
+        fontSize = 14.sp,
     )
-    */
 )

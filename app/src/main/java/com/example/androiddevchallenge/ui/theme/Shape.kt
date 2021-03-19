@@ -21,6 +21,10 @@ import androidx.compose.ui.unit.dp
 
 val shapes = Shapes(
     small = RoundedCornerShape(4.dp),
-    medium = RoundedCornerShape(4.dp),
-    large = RoundedCornerShape(0.dp)
+    medium = RoundedCornerShape(16.dp),
+    large = RoundedCornerShape(0.dp),
 )
+
+val bottomNavigationElevation = 8.dp
+val gridPadding = 8.dp
+val screenPadding = 16.dp
